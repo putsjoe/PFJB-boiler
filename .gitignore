@@ -1,0 +1,6 @@
+*.pyc
+*.sqlite
+*.db
+.DS_Store
+.coverage
+.vscode

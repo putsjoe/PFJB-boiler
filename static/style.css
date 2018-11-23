@@ -1,0 +1,66 @@
+
+body {
+    color: black;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif !important;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+}
+
+.title h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Roboto'', sans-serif !important;
+}
+
+.title h2 {
+    font-size: 1.7rem;
+}
+
+.container.signup .col-5 {
+    margin: 20px;
+}
+
+.jumbotron h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.jumbotron h2 {
+    font-weight:bolder;
+    color: black;
+    margin-bottom: 30px;
+}
+
+h2.title {
+    color: #b24c5f;
+    font-size: 1.2em;
+}
+
+div.jumbotron.title {
+    font-size: 1.1em;
+}
+
+.row .col-sm {
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.form-group .form-c {
+    border-radius: 5px;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 15px;
+}
+
+.title h1 a {
+    color: black
+}
+
+.alabel {
+    margin: 5px 1px;
+}

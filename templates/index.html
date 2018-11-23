@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-secondary">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+
+<div class="container">
+    <div class="row">
+        <p>Example text</p>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <h2>More text?</h2>
+    <p>Example text</p>
+</div>
+
+<div class="container signup">
+    <div class="row">
+        <div class="col-sm">
+            <p>Interested? Add your email address.<br>We will send you an email when we launch.</p>
+        </div>
+        <div class="col-sm">
+            <form method="post" action="">
+                <div class="form-group">
+                    {{ form.csrf_token }}
+                    {{ form.email.label }}: {{ form.email(class_="form-c") }}
+                    {% for error in form.email.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    <br>
+                    <label class="alabel" for="accept_tos">I accept the Privacy policy</label>: {{ form.accept_tos(class_="form-c") }}
+                    {% for error in form.accept_tos.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    <br>
+                    <input type="submit" class="btn" value="Submit">
+                </div>
+                <div class="form-group">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

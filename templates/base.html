@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Roboto.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Archivo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Fira+Sans.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="Description" content="">
+</head>
+<body>
+    {% block top %}
+    <div class="jumbotron title">
+        <h1>
+            <a href="/">Page Title</a>
+        </h1>
+        <h2 class="title">Page sub</h2>
+    </div>
+    {% endblock %}
+    {% block content %}{% endblock %}
+
+    <footer class="page-footer">
+        <div class="container">
+            <p>Footer</p>
+        </div>
+    </footer>
+</body>
+</html>
